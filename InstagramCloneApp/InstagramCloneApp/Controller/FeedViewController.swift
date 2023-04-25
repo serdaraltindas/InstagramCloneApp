@@ -28,11 +28,18 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func firebaseVerileriAl() {
         let firestoreDatabase = Firestore.firestore()
-        firestoreDatabase.collection("Posted").addSnapshotListener { (snapshot, error) in
+        //descanding -> yeni atılan en üstte
+        firestoreDatabase.collection("Posted").order(by: "tarih", descending: true)
+            .addSnapshotListener { (snapshot, error) in
             if error != nil {
                 self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
             }else{
                 if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    self.emailDizisi.removeAll(keepingCapacity: false)
+                    self.gorselDizisi.removeAll(keepingCapacity: false)
+                    self.yorumDizisi.removeAll(keepingCapacity: false)
+                    
                     for document in snapshot!.documents {
                         //let documentId = document.documentID
                         
@@ -45,12 +52,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                         if let email = document.get("email") as? String {
                             self.emailDizisi.append(email)
                         }
-                        
                     }
                     self.tableView.reloadData()
                 }
             }
-            
         }
     }
     
