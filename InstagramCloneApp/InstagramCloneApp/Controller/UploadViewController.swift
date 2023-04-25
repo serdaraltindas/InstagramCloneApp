@@ -66,7 +66,9 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                                     if error != nil {
                                         self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
                                     }else {
-                                        
+                                        self.imageView.image = UIImage()
+                                        self.commentLabel.text = ""
+                                        self.tabBarController?.selectedIndex = 0
                                     }
                                 }
                             }
