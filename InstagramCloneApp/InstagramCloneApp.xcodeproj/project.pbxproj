@@ -21,6 +21,7 @@
 		AEDFBAC229F7E0D200D2CC53 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */; };
 		AEDFBAC429F7E0E400D2CC53 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */; };
 		AEDFBAC629F7E0F900D2CC53 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */; };
+		AEDFBAC829F8790D00D2CC53 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC729F8790D00D2CC53 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AEDFBAC729F8790D00D2CC53 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */,
 				AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */,
 				AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */,
+				AEDFBAC729F8790D00D2CC53 /* FeedCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDFBAC829F8790D00D2CC53 /* FeedCell.swift in Sources */,
 				AEDFBAA429F7CE8000D2CC53 /* ViewController.swift in Sources */,
 				AEDFBAC429F7E0E400D2CC53 /* UploadViewController.swift in Sources */,
 				AEDFBAA029F7CE8000D2CC53 /* AppDelegate.swift in Sources */,
