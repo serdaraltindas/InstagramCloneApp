@@ -18,6 +18,9 @@
 		AEDFBABC29F7D46A00D2CC53 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = AEDFBABB29F7D46A00D2CC53 /* FirebaseDatabase */; };
 		AEDFBABE29F7D46A00D2CC53 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AEDFBABD29F7D46A00D2CC53 /* FirebaseFirestore */; };
 		AEDFBAC029F7D46A00D2CC53 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AEDFBABF29F7D46A00D2CC53 /* FirebaseStorage */; };
+		AEDFBAC229F7E0D200D2CC53 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */; };
+		AEDFBAC429F7E0E400D2CC53 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */; };
+		AEDFBAC629F7E0F900D2CC53 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		AEDFBAAB29F7CE8100D2CC53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEDFBAAD29F7CE8100D2CC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEDFBAB629F7D3E100D2CC53 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				AEDFBAA329F7CE8000D2CC53 /* ViewController.swift */,
+				AEDFBAC129F7E0D200D2CC53 /* FeedViewController.swift */,
+				AEDFBAC329F7E0E400D2CC53 /* UploadViewController.swift */,
+				AEDFBAC529F7E0F900D2CC53 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,8 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEDFBAA429F7CE8000D2CC53 /* ViewController.swift in Sources */,
+				AEDFBAC429F7E0E400D2CC53 /* UploadViewController.swift in Sources */,
 				AEDFBAA029F7CE8000D2CC53 /* AppDelegate.swift in Sources */,
+				AEDFBAC229F7E0D200D2CC53 /* FeedViewController.swift in Sources */,
 				AEDFBAA229F7CE8000D2CC53 /* SceneDelegate.swift in Sources */,
+				AEDFBAC629F7E0F900D2CC53 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
