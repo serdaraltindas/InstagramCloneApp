@@ -14,7 +14,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func girisYapButtonClicked(_ sender: UIButton) {
-        performSegue(withIdentifier: "toFeedVC", sender: self)
+        
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authdataresult, error) in
+                if error != nil {
+                    self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
+                }else{
+                    self.performSegue(withIdentifier: "toFeedVC", sender: self)
+                }
+            }
+        }else{
+            self.hataMesajı(title: "Hata!", message: "Email veya parola hatalı, tekrar deneyiniz!")
+        }
     }
     
     @IBAction func kayitOlButtonClicked(_ sender: UIButton) {
@@ -29,7 +40,7 @@ class ViewController: UIViewController {
             }
         } else {
             //error!
-            hataMesajı(title: "Hata!", message: "Kullanıcı adı veya parola hatalı, tekrar deneyiniz!")
+            hataMesajı(title: "Hata!", message: "Email veya parola hatalı, tekrar deneyiniz!")
         }
     }
     //alert message
