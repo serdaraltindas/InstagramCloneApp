@@ -46,7 +46,10 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
         let storageReferance = storage.reference()
         let mediaFolder = storageReferance.child("Media")
         if let data = imageView.image?.jpegData(compressionQuality: 0.5){
-            let imageReference = mediaFolder.child("image.jpg")
+            
+            let uuid = UUID().uuidString
+            
+            let imageReference = mediaFolder.child("\(uuid).jpg")
             imageReference.putData(data) { (StorageMetadata, error) in
                 if error != nil {
                     self.hataMesajı(title: "Hata!", message: error?.localizedDescription ?? "Hata!")
