@@ -41,5 +41,4 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
     @IBAction func uploadButtonClicked(_ sender: UIButton) {
         
     }
-    
 }
