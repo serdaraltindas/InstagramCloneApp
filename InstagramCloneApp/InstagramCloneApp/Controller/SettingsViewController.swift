@@ -1,9 +1,3 @@
-//
-//  SettingsViewController.swift
-//  InstagramCloneApp
-//
-//  Created by Serdar Altındaş on 25.04.2023.
-//
 
 import UIKit
 import Firebase
@@ -23,5 +17,4 @@ class SettingsViewController: UIViewController {
         }
         performSegue(withIdentifier: "toMainVC", sender: self)
     }
-    
 }
