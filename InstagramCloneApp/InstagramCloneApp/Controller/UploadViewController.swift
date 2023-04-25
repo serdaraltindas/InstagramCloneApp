@@ -57,7 +57,7 @@ class UploadViewController: UIViewController,UIImagePickerControllerDelegate, UI
                     imageReference.downloadURL { (url, error) in
                         if error == nil {
                             let imageUrl = url?.absoluteString
-                            print(imageUrl)
+                            print(imageUrl!)
                         }
                     }
                 }
