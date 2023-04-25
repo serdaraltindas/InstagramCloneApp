@@ -37,6 +37,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="girisYapButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AP4-uD-TA0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5B-Ye-9m2">
                                 <rect key="frame" x="16" y="274" width="361" height="35"/>
@@ -45,26 +48,31 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="kayitOlButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6q9-RH-PZu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="2cs-0r-4be"/>
-                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="leading" secondItem="SPn-jh-zqZ" secondAttribute="leading" id="3m1-uf-7YN"/>
-                            <constraint firstItem="L5B-Ye-9m2" firstAttribute="top" secondItem="hpW-uO-7a3" secondAttribute="bottom" constant="8" id="CaV-mg-Yxh"/>
-                            <constraint firstItem="hpW-uO-7a3" firstAttribute="top" secondItem="SPn-jh-zqZ" secondAttribute="bottom" constant="8" id="JQg-rw-Jed"/>
-                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="top" secondItem="HQJ-cy-FmX" secondAttribute="bottom" constant="8" id="LL6-w1-7Pg"/>
-                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SvR-62-6YM"/>
-                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="leading" secondItem="hpW-uO-7a3" secondAttribute="leading" id="V2O-Xh-aQ1"/>
-                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bDq-Tm-vFP"/>
-                            <constraint firstItem="hpW-uO-7a3" firstAttribute="trailing" secondItem="L5B-Ye-9m2" secondAttribute="trailing" id="cVI-Cc-ATS"/>
-                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="trailing" secondItem="hpW-uO-7a3" secondAttribute="trailing" id="sLs-Cv-FkT"/>
-                            <constraint firstItem="hpW-uO-7a3" firstAttribute="leading" secondItem="L5B-Ye-9m2" secondAttribute="leading" id="vX9-1I-ggN"/>
-                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="trailing" secondItem="SPn-jh-zqZ" secondAttribute="trailing" id="xQm-g0-Zys"/>
+                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="leading" secondItem="SPn-jh-zqZ" secondAttribute="leading" id="1YK-6u-cpD"/>
+                            <constraint firstItem="hpW-uO-7a3" firstAttribute="top" secondItem="SPn-jh-zqZ" secondAttribute="bottom" constant="8" id="3xa-mC-ik4"/>
+                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="trailing" secondItem="hpW-uO-7a3" secondAttribute="trailing" id="6Sf-EF-rRv"/>
+                            <constraint firstItem="hpW-uO-7a3" firstAttribute="trailing" secondItem="L5B-Ye-9m2" secondAttribute="trailing" id="GZl-WK-8F3"/>
+                            <constraint firstItem="L5B-Ye-9m2" firstAttribute="top" secondItem="hpW-uO-7a3" secondAttribute="bottom" constant="8" id="O21-Xd-4Ug"/>
+                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ppr-uc-lsa"/>
+                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="leading" secondItem="hpW-uO-7a3" secondAttribute="leading" id="VTd-aG-QjC"/>
+                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="88" id="Wqd-jM-vJN"/>
+                            <constraint firstItem="hpW-uO-7a3" firstAttribute="leading" secondItem="L5B-Ye-9m2" secondAttribute="leading" id="cni-y4-sYy"/>
+                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eDp-8e-i3C"/>
+                            <constraint firstItem="HQJ-cy-FmX" firstAttribute="trailing" secondItem="SPn-jh-zqZ" secondAttribute="trailing" id="pZX-5B-7KM"/>
+                            <constraint firstItem="SPn-jh-zqZ" firstAttribute="top" secondItem="HQJ-cy-FmX" secondAttribute="bottom" constant="8" id="q5o-Gr-Ulr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="HQJ-cy-FmX" id="CCR-z5-bsL"/>
+                        <outlet property="passwordTextField" destination="SPn-jh-zqZ" id="c5W-z0-Jbv"/>
                         <segue destination="gHk-RL-2gg" kind="presentation" identifier="toFeedVC" modalPresentationStyle="fullScreen" id="GOJ-93-aQi"/>
                     </connections>
                 </viewController>
@@ -95,14 +103,30 @@
                     <view key="view" contentMode="scaleToFill" id="slN-1c-LV8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-lL-UvP">
+                                <rect key="frame" x="119" y="401" width="155" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Çıkış Yap" cornerStyle="capsule">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Nbd-7w-bo7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ShI-lL-UvP" firstAttribute="top" secondItem="Nbd-7w-bo7" secondAttribute="top" constant="401" id="4AL-Ph-vKQ"/>
+                            <constraint firstItem="ShI-lL-UvP" firstAttribute="leading" secondItem="Nbd-7w-bo7" secondAttribute="leading" constant="119" id="Tc6-GC-NRE"/>
+                            <constraint firstItem="ShI-lL-UvP" firstAttribute="centerY" secondItem="slN-1c-LV8" secondAttribute="centerY" id="kgg-vT-f48"/>
+                            <constraint firstItem="ShI-lL-UvP" firstAttribute="centerX" secondItem="slN-1c-LV8" secondAttribute="centerX" id="mrb-3T-nw3"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="Eja-ZT-ega"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sI3-QA-heG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2874" y="-35"/>
+            <point key="canvasLocation" x="2872.5190839694656" y="-35.211267605633807"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Zur-kT-SBE">
