@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -61,7 +62,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FeedCell
         cell.emailText.text = emailDizisi[indexPath.row]
         cell.commentText.text = yorumDizisi[indexPath.row]
-        cell.postImageView.image = UIImage()
+        cell.postImageView.sd_setImage(with: URL(string: self.gorselDizisi[indexPath.row]))
         return cell
         
     }
