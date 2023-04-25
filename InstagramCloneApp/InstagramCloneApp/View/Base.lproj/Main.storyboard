@@ -105,6 +105,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="uploadButtonClicked:" destination="fIh-uy-HZT" eventType="touchUpInside" id="S68-yp-HuH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yorum satırının üst tarafındaki boşluğa tıklayarak istediğin fotoğrafı yükleyebilirsin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-YE-Xd7">
                                 <rect key="frame" x="16" y="463" width="361" height="115"/>
@@ -135,6 +138,11 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.fill" catalog="system" id="NB9-kM-vxQ"/>
+                    <connections>
+                        <outlet property="commentLabel" destination="eZW-ss-PsB" id="vcN-ob-Bw5"/>
+                        <outlet property="imageView" destination="DER-l2-Qhr" id="6Wq-gd-jtS"/>
+                        <outlet property="label" destination="OH9-YE-Xd7" id="kLk-39-TRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfG-op-rc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
