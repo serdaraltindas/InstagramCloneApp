@@ -88,18 +88,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DER-l2-Qhr">
-                                <rect key="frame" x="16" y="130" width="361" height="223"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="eZW-ss-PsB">
                                 <rect key="frame" x="16" y="371" width="361" height="34"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3u2-dA-7TC"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ala-Ck-PK4">
                                 <rect key="frame" x="16" y="420" width="361" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Suc-fZ-hNs"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Upload" cornerStyle="capsule">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,29 +115,36 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yorum satırının üst tarafındaki boşluğa tıklayarak istediğin fotoğrafı yükleyebilirsin." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OH9-YE-Xd7">
                                 <rect key="frame" x="16" y="463" width="361" height="115"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="115" id="WUQ-Z7-5TE"/>
+                                    <constraint firstAttribute="height" constant="115" id="vx5-OS-FK9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="25"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DER-l2-Qhr">
+                                <rect key="frame" x="16" y="135" width="361" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="361" id="J9g-Xu-Mo2"/>
+                                    <constraint firstAttribute="height" constant="228" id="XWh-9i-BCC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1we-90-onH"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ala-Ck-PK4" firstAttribute="trailing" secondItem="OH9-YE-Xd7" secondAttribute="trailing" id="AMZ-JC-QsB"/>
-                            <constraint firstItem="DER-l2-Qhr" firstAttribute="top" secondItem="1we-90-onH" secondAttribute="top" constant="130" id="FmA-kb-fJ3"/>
-                            <constraint firstItem="DER-l2-Qhr" firstAttribute="leading" secondItem="eZW-ss-PsB" secondAttribute="leading" id="Fp7-1p-QVo"/>
-                            <constraint firstItem="1we-90-onH" firstAttribute="bottom" secondItem="OH9-YE-Xd7" secondAttribute="bottom" constant="225" id="JGb-xn-QBv"/>
-                            <constraint firstItem="eZW-ss-PsB" firstAttribute="trailing" secondItem="ala-Ck-PK4" secondAttribute="trailing" id="Jry-aN-hDE"/>
-                            <constraint firstItem="DER-l2-Qhr" firstAttribute="leading" secondItem="B4r-JC-s3h" secondAttribute="leadingMargin" id="OIV-gC-rcn"/>
-                            <constraint firstItem="eZW-ss-PsB" firstAttribute="top" secondItem="DER-l2-Qhr" secondAttribute="bottom" constant="18" id="PIC-JQ-rTx"/>
-                            <constraint firstItem="DER-l2-Qhr" firstAttribute="trailing" secondItem="eZW-ss-PsB" secondAttribute="trailing" id="Qxz-bN-lWL"/>
-                            <constraint firstItem="eZW-ss-PsB" firstAttribute="leading" secondItem="ala-Ck-PK4" secondAttribute="leading" id="RBd-kY-stv"/>
-                            <constraint firstItem="OH9-YE-Xd7" firstAttribute="top" secondItem="ala-Ck-PK4" secondAttribute="bottom" constant="8" id="Rd0-of-rcG"/>
-                            <constraint firstItem="ala-Ck-PK4" firstAttribute="top" secondItem="eZW-ss-PsB" secondAttribute="bottom" constant="15" id="e3K-mm-5vw"/>
-                            <constraint firstItem="DER-l2-Qhr" firstAttribute="trailing" secondItem="B4r-JC-s3h" secondAttribute="trailingMargin" id="l0p-Dh-EMz"/>
-                            <constraint firstItem="ala-Ck-PK4" firstAttribute="leading" secondItem="OH9-YE-Xd7" secondAttribute="leading" id="u7e-7R-VoZ"/>
+                            <constraint firstItem="DER-l2-Qhr" firstAttribute="leading" secondItem="B4r-JC-s3h" secondAttribute="leadingMargin" id="1Rh-US-s22"/>
+                            <constraint firstItem="ala-Ck-PK4" firstAttribute="trailing" secondItem="OH9-YE-Xd7" secondAttribute="trailing" id="1tg-HR-2VY"/>
+                            <constraint firstItem="DER-l2-Qhr" firstAttribute="trailing" secondItem="eZW-ss-PsB" secondAttribute="trailing" id="2zX-jv-wU9"/>
+                            <constraint firstItem="eZW-ss-PsB" firstAttribute="top" secondItem="DER-l2-Qhr" secondAttribute="bottom" constant="8" id="9oe-gP-N5Y"/>
+                            <constraint firstItem="ala-Ck-PK4" firstAttribute="top" secondItem="eZW-ss-PsB" secondAttribute="bottom" constant="15" id="Nlc-Re-G49"/>
+                            <constraint firstItem="ala-Ck-PK4" firstAttribute="leading" secondItem="OH9-YE-Xd7" secondAttribute="leading" id="SP0-jY-GQv"/>
+                            <constraint firstItem="1we-90-onH" firstAttribute="bottom" secondItem="OH9-YE-Xd7" secondAttribute="bottom" constant="225" id="T3C-nw-880"/>
+                            <constraint firstItem="OH9-YE-Xd7" firstAttribute="top" secondItem="ala-Ck-PK4" secondAttribute="bottom" constant="8" id="cN1-xi-yWv"/>
+                            <constraint firstItem="eZW-ss-PsB" firstAttribute="trailing" secondItem="ala-Ck-PK4" secondAttribute="trailing" id="dpL-AS-Jbu"/>
+                            <constraint firstItem="eZW-ss-PsB" firstAttribute="leading" secondItem="ala-Ck-PK4" secondAttribute="leading" id="edz-UW-Ruj"/>
+                            <constraint firstItem="DER-l2-Qhr" firstAttribute="trailing" secondItem="B4r-JC-s3h" secondAttribute="trailingMargin" id="ewW-Me-OM7"/>
+                            <constraint firstItem="DER-l2-Qhr" firstAttribute="leading" secondItem="eZW-ss-PsB" secondAttribute="leading" id="qD0-8g-pkD"/>
+                            <constraint firstItem="DER-l2-Qhr" firstAttribute="top" secondItem="1we-90-onH" secondAttribute="top" constant="135" id="rIn-45-c6R"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="square.and.arrow.up.fill" catalog="system" id="NB9-kM-vxQ"/>
@@ -161,7 +171,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Çıkış Yap">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="baseBackgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="cikisYapButtonClicked:" destination="PK3-qT-7FV" eventType="touchUpInside" id="hou-g2-MX5"/>
